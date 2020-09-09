@@ -1,0 +1,461 @@
+@import "_nullstyle";
+
+@import url("./fonts/fontsCss/fonts.css");
+
+$mainColor: #69B0AC;
+
+body {
+    font-family: 'Uni Neue', sans-serif;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.container {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0 0 0;
+    margin: 0 0 75px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+
+    &__title {
+        position: relative;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 1;
+        color: #363636;
+        padding: 0 27px 0 0;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 1px;
+            display: block;
+            width: 1px;
+            height: 30px;
+            background-color: #dddddd;
+        }
+    }
+
+    &__slogan {
+        font-size: 12px;
+        line-height: 1.17;
+        color: #4B5455;
+        padding: 0 0 0 27px;
+        width: 160px;
+    }
+}
+
+.top-nav {
+
+    &__link {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        color: #363636;
+        margin: 0 44px 0 0;
+        transition: color 0.2s ease-in;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            color: #69B0AC;
+        }
+    }
+}
+
+.header {
+    height: 800px;
+    background-color: #EEF9FF;
+    position: relative;
+    overflow-x: hidden;
+
+    &__row {
+        display: flex;
+    }
+
+    &__content {
+        max-width: 700px;
+        flex: 0 0 auto;
+    }
+
+    &__title {
+        font-family: 'Uni Neue Book', sans-serif;
+        font-size: 73px;
+        line-height: 1.1;
+        color: #363636;
+        margin: 0 0 27px 0;
+
+        span {
+            font-family: 'Uni Neue', sans-serif;
+            color: #69B0AC;
+        }
+    }
+
+    &__text {
+        margin: 0 0 40px 0;
+        max-width: 440px;
+
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.75;
+            color: #7C7C7C;
+        }
+    }
+
+    &__list {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #363636;
+
+        b {
+            font-weight: 700;
+        }
+
+        &_item {
+            margin: 0 0 17px 0;
+            position: relative;
+            padding: 0 0 0 30px;
+
+            &::before {
+                content: "";
+                width: 20px;
+                height: 23px;
+                position: absolute;
+                left: -1px;
+                top: 3px;
+                background-image: url('../../img/icons/icon1.svg');
+            }
+        }
+    }
+
+    &__img-wrapper {
+        width: 1290px;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        right: -86px;
+    }
+
+    &__arrow {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 47px);
+    }
+
+    &__arrow-img {
+        width: 140px;
+    }
+}
+
+// Section about
+
+.section-about {
+    padding: 133px 0 123px;
+    background: linear-gradient(180deg, #FFFFFF 49.96%, #EFF9FF 100%);
+
+    &__heading {
+        max-width: 870px;
+        margin: 0 auto 61px;
+        font-family: 'Uni Neue Book', sans-serif;
+        font-size: 48px;
+        font-weight: normal;
+        line-height: 1.33;
+        text-align: center;
+        color: #363636;
+
+    }
+
+    span {
+        font-family: 'Uni Neue', sans-serif;
+        color: #69B0AC;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 89px;
+    }
+
+    &__video {}
+
+    &__text {
+        max-width: 560px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.75;
+        color: #545454;
+        z-index: 9;
+
+        p {
+            margin-bottom: 18px;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+    }
+}
+
+.promo-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 625px;
+    height: 420px;
+    margin-right: 35px;
+    border-radius: 40px;
+    border: 10px solid #fff;
+    overflow: hidden;
+    background: radial-gradient(25.3% 57.25% at 50% 50%, rgba(80, 152, 190, 0.5) 0%, rgba(52, 113, 146, 0.76) 100%), url('./../../img/woman2.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 80px 100px rgba(211, 226, 235, 0.8);
+
+    &__play-btn {
+        position: relative;
+        width: 80px;
+        height: 84px;
+        border: none;
+        background-color: transparent;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            width: 116px;
+            height: 116px;
+            border-radius: 50%;
+            background: rgba(162, 173, 255, 0.2);
+            transform: translate(-50%, -50%);
+            animation: circle 1.5s ease-out infinite;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            width: 174px;
+            height: 174px;
+            border-radius: 50%;
+            border: 1px solid rgba(162, 173, 255, 0.3);
+            transform: translate(-50%, -50%);
+            animation: wave 1.5s ease-out infinite;
+        }
+    }
+}
+
+.numbers-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.number {
+
+    &__value {
+        margin-bottom: 36px;
+        font-weight: 500;
+        font-size: 100px;
+        line-height: 1;
+        background: rgb(167, 215, 241);
+        background: linear-gradient(145deg, rgba(167, 215, 241, 1) 0%, rgba(139, 196, 226, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__description {
+        display: flex;
+
+        &_bold {
+            margin: 0 19px 0 0;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1.17;
+            color: #363636;
+        }
+
+        &_text {
+            padding: 5px 0 0;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.37;
+            color: #545454;
+        }
+    }
+
+
+}
+
+.number-bullets {
+    width: 96px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+
+@keyframes circle {
+    from {
+        width: 116px;
+        height: 116px;
+    }
+
+    to {
+        width: 216px;
+        height: 216px;
+        opacity: 0;
+    }
+}
+
+@keyframes wave {
+    from {
+        width: 174px;
+        height: 174px;
+    }
+
+    to {
+        width: 274px;
+        height: 274px;
+        opacity: 0;
+    }
+}
+
+.menu-icon {
+    margin-left: 10px;
+    z-index: 19;
+    position: relative;
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+// menu button
+.menu-icon-line {
+    position: relative;
+    width: 30px;
+    height: 5px;
+    background-color: $mainColor;
+}
+
+.menu-icon-line::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: $mainColor;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu-icon-line::after {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: $mainColor;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line {
+    background-color: transparent;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line::before {
+    background-color: #fff;
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line::after {
+    background-color: #fff;
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+/* ----------------- Мобильная навигация ----------------- */
+
+.mobile-nav {
+    z-index: 9;
+    display: block;
+    position: absolute;
+    right: -350px;
+    top: 0;
+    height: 100%;
+    width: 350px;
+    padding: 50px;
+    background-color: #6997b1;
+    transition: transform 0.4s ease-in;
+}
+
+.mobile-nav--active {
+
+    transform: translateX(-100%);
+}
+
+.mobile-nav__title {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #f6d142;
+}
+
+.mobile-nav__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-nav__item {
+    margin-bottom: 30px;
+}
+
+.mobile-nav__link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.mobile-nav__link:hover {
+    color: #ffd600;
+}
