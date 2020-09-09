@@ -1,6 +1,6 @@
 @import "_nullstyle";
 
-@import url("./fonts/fontsCss/fonts.css");
+@import url("../fonts/fontsCss/fonts.css");
 
 $mainColor: #69B0AC;
 
@@ -142,7 +142,7 @@ body {
                 position: absolute;
                 left: -1px;
                 top: 3px;
-                background-image: url('./../img/icons/icon1.svg');
+                background-image: url('../img/icons/icon1.svg');
             }
         }
     }

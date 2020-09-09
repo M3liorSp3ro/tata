@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("./fonts/fontsCss/fonts.css");
+@import url("../fonts/fontsCss/fonts.css");
 * {
   padding: 0;
   margin: 0;
@@ -243,7 +243,7 @@ body {
   position: absolute;
   left: -1px;
   top: 3px;
-  background-image: url("./../img/icons/icon1.svg");
+  background-image: url("../img/icons/icon1.svg");
 }
 
 .header__img-wrapper {
